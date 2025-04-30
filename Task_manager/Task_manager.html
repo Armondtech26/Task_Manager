@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <script src="Task.js"></script>
+    <style>
+        form {
+                font-family: Arial, sans-serif;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+            }
+        h1 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <form>
+        <input type="text" id="task" name="task" required placeholder="Task Name">
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <label for="important">Important:</label>
+        <input type="checkbox" id="important" name="important">
+        <input type="submit" value="Add Task">
+    </form>
+    <h2>Task List</h2>
+    <div id="taskmanager"></div>
+</body>
+</html>
